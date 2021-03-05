@@ -1,0 +1,277 @@
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:#40407A;
+    color: #40407A;
+    font-family: Verdana, Arial, sans-serif;
+
+}
+
+header
+{
+    background-image: url(sunrise.jpg);
+    color:#FFFFFF ;
+    line-height: 250px;
+    text-indent: 7em;
+    background-size: 100% 100%;
+    height: 300px;
+    margin-top: -1.4em;
+}
+
+nav
+{
+    text-align: right;
+    text-decoration: none;
+    background-color:#FFFFFF;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 0;
+    height: auto;
+}
+
+nav ul
+{
+    marker: none;
+    margin: 0;
+    padding-right: 2em;
+    font-size: 1.2em;
+}
+
+nav li
+{
+    display: inline;
+    padding-left: 2em;
+    width:30%;
+}
+
+audio
+{
+    margin-bottom: 1em;
+}
+
+nav a { color: #3F2860; text-decoration: none;}
+nav a:link {color: #3F2860; text-decoration: none;}
+nav a:visited {color: #497777; text-decoration: none;}
+nav a:hover {color: #A26100;}
+
+header a {text-decoration: none;}
+header :link {color: #FFFFFF; text-decoration: none; font-size: 90%; min-height: 200px;}
+header :visited {color: #FFFFFF; text-decoration: none;}
+header :hover {color: #8F92B2; transition: ease-out color 10s;}
+
+footer
+{
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+    float: right;
+}
+
+h2
+{
+    margin: 0;
+}
+
+#wrapper
+{
+    background-color:#F5F5F5;
+    padding: 2em;
+}
+
+.home
+{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 8em;
+
+}
+
+.content
+{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+    display: none;
+
+
+}
+
+#mathero
+{
+    height: 300px;
+    background-image: url(yogamat.jpg);
+    background-repeat: no-repeat;
+    float: none;
+    display: none;
+}
+
+#loungehero
+{
+    height: 300px;
+    background-image: url(yogalounge.jpg);
+    background-repeat: no-repeat;
+    float: none;
+}
+
+#flow
+{
+    display: block;
+}
+
+section
+{
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+h3
+{
+    color : #000033;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+table
+{
+    border: 1px solid #40407A;
+    margin-bottom: 1em;
+    min-width: 400px;
+    border-collapse: collapse;
+}
+
+td
+{
+    padding: 0.5em;
+    border: 1px solid #40407A;
+}
+
+th
+{
+    padding: 0.5em;
+    border: 1px solid #40407A;
+}
+
+tr:nth-of-type(2n-1)
+{
+    background-color: #D7E8E9;
+}
+
+caption
+{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+form
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+textarea
+{
+    margin-bottom: 5em;
+}
+
+@media only screen and (min-width: 600px)
+{
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li
+    {
+        width: 7em;
+    }
+    section
+    {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #mathero
+    {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    #loungehero
+    {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    #flow
+    {
+        display: flex;
+        padding-bottom: 1em;
+    }
+
+    form
+    {
+        width: 60%;
+        max-width: 40em;
+        grid-gap: 1em;
+        column-count: 2;
+
+    }
+    button
+    {
+        grid-column: unset;
+        width: 9em;
+    }
+    .content main
+    {
+        display: grid;
+        grid-template-rows: auto ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px)
+{
+    header
+    {
+        font-size: 120%;
+    }
+
+    nav
+    {
+        font-weight: bold;
+    }
+
+    .home
+    {
+        height: 50vh;
+        padding-top: 5em;
+        padding-left: 8em;
+    }
+
+    .content
+    {
+        height: 30vh;
+        padding-top: 2em;
+        padding-left: 8em;
+    }
+
+    #wrapper
+    {
+        margin: auto;
+        width: 80%;
+    }
+
+
+}
+
